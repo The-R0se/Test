@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מצגת</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Heebo', sans-serif;
+            background-color: #f0f4f8;
+            color: #1a202c;
+        }
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: right;
+        }
+        .slide {
+            background-color: #ffffff;
+            border-radius: 1.5rem;
+            padding: 3rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            max-width: 900px;
+            transition: all 0.5s ease-in-out;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .slide.active {
+            display: flex;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #2c5282;
+            text-align: right;
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #2c5282;
+            text-align: right;
+        }
+        p {
+            font-size: 1.25rem;
+            line-height: 1.75;
+            margin-bottom: 1.5rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 1.125rem;
+            line-height: 1.75;
+        }
+        li::before {
+            content: "•";
+            color: #4c51bf;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-right: -1em;
+            margin-left: 1em;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 900px;
+            margin-top: 2rem;
+        }
+        .nav-buttons button {
+            background-color: #4c51bf;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .nav-buttons button:hover {
+            background-color: #3f479a;
+        }
+        .nav-buttons button:disabled {
+            background-color: #a0aec0;
+            cursor: not-allowed;
+        }
+        .footer {
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            color: #718096;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="slide1" class="slide active">
+            <h2>השפעת הבינה המלאכותית על מיתוג מעסיק: שינוי וחדשנות</h2>
+            <p>סיכום קצר של מטרת המצגת והצגת הדוברים.</p>
+        </div>
+
+        <div id="slide2" class="slide">
+            <h2>המיומנויות הנדרשות בעידן ה-AI</h2>
+            <p>על מנת להצליח בעתיד, יש להתמקד בפיתוח:</p>
+            <ul>
+                <li>חשיבה אסטרטגית וביקורתית.</li>
+                <li>יכולות אינטליגנציה רגשית (EQ).</li>
+                <li>קבלת החלטות מבוססות נתונים.</li>
+            </ul>
+        </div>
+        
+        <div id="slide3" class="slide">
+            <h2>AI בפעולה</h2>
+            <p>כלים אלו מסייעים ב:</p>
+            <ul>
+                <li>אוטומציה של יצירת תוכן (מודעות דרושים, פוסטים).</li>
+                <li>סינון מועמדים ותקשורת מותאמת אישית.</li>
+                <li>ניתוח נתונים על מועמדים ועובדים.</li>
+            </ul>
+        </div>
+
+        <div id="slide4" class="slide">
+            <h2>האתגרים האתיים בשימוש ב-AI</h2>
+            <p>ישנם אתגרים שחשוב להתמודד איתם:</p>
+            <ul>
+                <li>הטיה אלגוריתמית ושיפוט בלתי הוגן.</li>
+                <li>שקיפות ואמון בתהליכים אוטומטיים.</li>
+                <li>שמירה על פרטיות הנתונים.</li>
+            </ul>
+        </div>
+
+        <div id="slide5" class="slide">
+            <h2>המיומנויות הנדרשות בעידן ה-AI</h2>
+            <p>על מנת להצליח בעתיד, יש להתמקד בפיתוח:</p>
+            <ul>
+                <li>חשיבה אסטרטגית וביקורתית.</li>
+                <li>יכולות אינטליגנציה רגשית (EQ).</li>
+                <li>קבלת החלטות מבוססות נתונים.</li>
+            </ul>
+        </div>
+
+        <div class="nav-buttons">
+            <button id="prevBtn" onclick="prevSlide()">הקודם</button>
+            <button id="nextBtn" onclick="nextSlide()">הבא</button>
+        </div>
+
+        <div class="footer">
+            <p id="slide-counter"></p>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            updateButtons();
+            updateCounter();
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function updateButtons() {
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === slides.length - 1;
+        }
+
+        function updateCounter() {
+            const counter = document.getElementById('slide-counter');
+            counter.textContent = `שקף ${currentSlide + 1} מתוך ${slides.length}`;
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                prevSlide();
+            }
+        });
+        
+        // Initial setup
+        updateButtons();
+        updateCounter();
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
